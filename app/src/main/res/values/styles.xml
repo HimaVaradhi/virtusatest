@@ -1,0 +1,27 @@
+<resources>
+
+    <!--<style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="AppNewTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorNewPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorNewAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyActionBarTheme" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+</resources>

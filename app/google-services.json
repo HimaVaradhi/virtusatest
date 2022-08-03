@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "459430611638",
+    "firebase_url": "https://gkbpay-sales.firebaseio.com",
+    "project_id": "gkbpay-sales",
+    "storage_bucket": "gkbpay-sales.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459430611638:android:334ce0cd661f1a58a37417",
+        "android_client_info": {
+          "package_name": "com.gkb.hitechsales"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459430611638-0g5v4c6jhefa08pe9gesetgo2m319me2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gkb.hitechsales",
+            "certificate_hash": "7758c9a615346821c2146cb7183a26268a7a5385"
+          }
+        },
+        {
+          "client_id": "459430611638-c9np70e4ubct66nt2ot946s6bng59t5g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjA2dy68L4x5NA3nhgBGl1Bha9MUs8jNw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459430611638-c9np70e4ubct66nt2ot946s6bng59t5g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+    <domain-config>
+        <domain includeSubdomains="true">https://www.gkbpay.com/app/</domain>
+        <trust-anchors>
+            <certificates src="@raw/my_ca"/>
+        </trust-anchors>
+    </domain-config>
+</network-security-config>
+        <!--<network-security-config>-->
+        <!--<domain-config cleartextTrafficPermitted="true">-->
+        <!--<domain includeSubdomains="true">mobile.gkbhitech.com</domain>-->
+        <!--<domain includeSubdomains="true">http://mobile.gkbhitech.com</domain>-->
+        <!--<domain includeSubdomains="true">http://gkbpay.com:3000</domain>-->
+        <!--</domain-config>-->
+        <!--</network-security-config>-->

@@ -1,0 +1,610 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "c33567ef5700e030abe4cc81bbb5b5c8",
+    "entities": [
+      {
+        "tableName": "kyc",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `r_plant` TEXT NOT NULL, `plant_desc` TEXT, `cust_code` TEXT, `cust_name` TEXT NOT NULL, `address1` TEXT NOT NULL, `address2` TEXT NOT NULL, `city` TEXT NOT NULL, `state_code` TEXT, `country_code` TEXT NOT NULL, `phone` TEXT NOT NULL, `mobile` TEXT NOT NULL, `email` TEXT, `active` TEXT NOT NULL, `pin` TEXT, `special_price` TEXT NOT NULL, `currency` TEXT NOT NULL, `contact_person` TEXT, `cust_group` TEXT NOT NULL, `cust_group_name` TEXT NOT NULL, `cust_type_name` TEXT NOT NULL, `credit_limit_amt` TEXT NOT NULL, `longitude` REAL NOT NULL, `latitude` REAL NOT NULL, `customer_incharge` TEXT NOT NULL, `sys_time` TEXT NOT NULL, `id` TEXT NOT NULL, `location_image_flag` TEXT NOT NULL, `gst_no` TEXT, `pan_no` TEXT, `ifsc_code` TEXT NOT NULL, `proprietor_name` TEXT NOT NULL, `contact_person_name` TEXT NOT NULL, `contact_person_phone_no` TEXT NOT NULL, `aadhar_number` TEXT, `special_date` INTEGER NOT NULL, `special_date_occasion` TEXT, `state` TEXT NOT NULL, `gst_state_code` TEXT NOT NULL, `designation_id` TEXT, `designation` TEXT NOT NULL, `designationPosition` INTEGER NOT NULL, `plantPosition` INTEGER NOT NULL, `statePosition` INTEGER NOT NULL, `PAN` TEXT NOT NULL, `AADHAR` TEXT NOT NULL, `AADHARBACK` TEXT NOT NULL, `VOTER` TEXT NOT NULL, `VOTERBACK` TEXT NOT NULL, `PASSPORT` TEXT NOT NULL, `PASSPORTBACK` TEXT NOT NULL, `DL` TEXT NOT NULL, `DLBACK` TEXT NOT NULL, `VISITINGCARD` TEXT NOT NULL, `STORE` TEXT NOT NULL, `SHOPKEEPER` TEXT NOT NULL, `module` TEXT NOT NULL, `gkbpay_flag` TEXT, `gkbKycFlag` TEXT NOT NULL, `changeFlg` INTEGER NOT NULL, `cust_type` TEXT NOT NULL, `scheme_flag` TEXT NOT NULL, `date_type` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "_id",
+            "columnName": "_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "r_plant",
+            "columnName": "r_plant",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "plant_desc",
+            "columnName": "plant_desc",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "cust_code",
+            "columnName": "cust_code",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "cust_name",
+            "columnName": "cust_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "address1",
+            "columnName": "address1",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "address2",
+            "columnName": "address2",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "city",
+            "columnName": "city",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "state_code",
+            "columnName": "state_code",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "country_code",
+            "columnName": "country_code",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "phone",
+            "columnName": "phone",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mobile",
+            "columnName": "mobile",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "email",
+            "columnName": "email",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "active",
+            "columnName": "active",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pin",
+            "columnName": "pin",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "special_price",
+            "columnName": "special_price",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "currency",
+            "columnName": "currency",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "contact_person",
+            "columnName": "contact_person",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "cust_group",
+            "columnName": "cust_group",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cust_group_name",
+            "columnName": "cust_group_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cust_type_name",
+            "columnName": "cust_type_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "credit_limit_amt",
+            "columnName": "credit_limit_amt",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "longitude",
+            "columnName": "longitude",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "latitude",
+            "columnName": "latitude",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "customer_incharge",
+            "columnName": "customer_incharge",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sys_time",
+            "columnName": "sys_time",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "location_image_flag",
+            "columnName": "location_image_flag",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "gst_no",
+            "columnName": "gst_no",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pan_no",
+            "columnName": "pan_no",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "ifsc_code",
+            "columnName": "ifsc_code",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "proprietor_name",
+            "columnName": "proprietor_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "contact_person_name",
+            "columnName": "contact_person_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "contact_person_phone_no",
+            "columnName": "contact_person_phone_no",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "aadhar_number",
+            "columnName": "aadhar_number",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "special_date",
+            "columnName": "special_date",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "special_date_occasion",
+            "columnName": "special_date_occasion",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "state",
+            "columnName": "state",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "gst_state_code",
+            "columnName": "gst_state_code",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "designation_id",
+            "columnName": "designation_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "designation",
+            "columnName": "designation",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "designationPosition",
+            "columnName": "designationPosition",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "plantPosition",
+            "columnName": "plantPosition",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "statePosition",
+            "columnName": "statePosition",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "PAN",
+            "columnName": "PAN",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "AADHAR",
+            "columnName": "AADHAR",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "AADHARBACK",
+            "columnName": "AADHARBACK",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "VOTER",
+            "columnName": "VOTER",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "VOTERBACK",
+            "columnName": "VOTERBACK",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "PASSPORT",
+            "columnName": "PASSPORT",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "PASSPORTBACK",
+            "columnName": "PASSPORTBACK",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "DL",
+            "columnName": "DL",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "DLBACK",
+            "columnName": "DLBACK",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "VISITINGCARD",
+            "columnName": "VISITINGCARD",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "STORE",
+            "columnName": "STORE",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "SHOPKEEPER",
+            "columnName": "SHOPKEEPER",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "module",
+            "columnName": "module",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "gkbpay_flag",
+            "columnName": "gkbpay_flag",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "gkbKycFlag",
+            "columnName": "gkbKycFlag",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "changeFlg",
+            "columnName": "changeFlg",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cust_type",
+            "columnName": "cust_type",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "scheme_flag",
+            "columnName": "scheme_flag",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "date_type",
+            "columnName": "date_type",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "plants",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`plantCode` TEXT NOT NULL, `name` TEXT NOT NULL, PRIMARY KEY(`plantCode`))",
+        "fields": [
+          {
+            "fieldPath": "plantCode",
+            "columnName": "plantCode",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "plantCode"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "states",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`stateCode` TEXT NOT NULL, `name` TEXT NOT NULL, `gstCode` TEXT NOT NULL, PRIMARY KEY(`stateCode`))",
+        "fields": [
+          {
+            "fieldPath": "stateCode",
+            "columnName": "stateCode",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "gstCode",
+            "columnName": "gstCode",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "stateCode"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "designations",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`designation_id` TEXT NOT NULL, `designation` TEXT NOT NULL, PRIMARY KEY(`designation_id`))",
+        "fields": [
+          {
+            "fieldPath": "designation_id",
+            "columnName": "designation_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "designation",
+            "columnName": "designation",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "designation_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "upload",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`photoName` TEXT NOT NULL, `filePath` TEXT NOT NULL, `photoType` TEXT NOT NULL, `value` TEXT NOT NULL, `size` INTEGER NOT NULL, `lastRetryAt` INTEGER NOT NULL, `hasChanged` INTEGER NOT NULL, PRIMARY KEY(`photoName`))",
+        "fields": [
+          {
+            "fieldPath": "photoName",
+            "columnName": "photoName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "filePath",
+            "columnName": "filePath",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "photoType",
+            "columnName": "photoType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "value",
+            "columnName": "value",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "size",
+            "columnName": "size",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastRetryAt",
+            "columnName": "lastRetryAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "hasChanged",
+            "columnName": "hasChanged",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "photoName"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "banks",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`sap_gl` TEXT NOT NULL, `bank_desc` TEXT NOT NULL, PRIMARY KEY(`sap_gl`))",
+        "fields": [
+          {
+            "fieldPath": "sap_gl",
+            "columnName": "sap_gl",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bank_desc",
+            "columnName": "bank_desc",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "sap_gl"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "notifications",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`tis` INTEGER NOT NULL, `title` TEXT, `description` TEXT, `isRead` INTEGER NOT NULL, PRIMARY KEY(`tis`))",
+        "fields": [
+          {
+            "fieldPath": "tis",
+            "columnName": "tis",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isRead",
+            "columnName": "isRead",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "tis"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'c33567ef5700e030abe4cc81bbb5b5c8')"
+    ]
+  }
+}
