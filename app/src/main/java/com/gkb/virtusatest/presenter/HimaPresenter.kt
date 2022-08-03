@@ -4,12 +4,12 @@ import android.annotation.SuppressLint
 import com.gkb.virtusatest.model.*
 import com.gkb.virtusatest.api.ApiClient
 import com.gkb.virtusatest.util.Constants
-import com.gkb.virtusatest.views.activities.HimaActivity
+import com.gkb.virtusatest.views.activities.PeopleActivity
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class HimaPresenter(private val view: HimaActivity) {
+class HimaPresenter(private val view: PeopleActivity) {
     fun getMyData() {
         ApiClient.getHimaClient.getData()
             .enqueue(object : Callback<List<HimaResponseData>?> {

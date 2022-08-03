@@ -14,11 +14,11 @@ class HomeActivity: AppCompatActivity(){
         setContentView(R.layout.fragment_more_dashboard)
 
         cl_7.setOnClickListener {
-                val intent = Intent(this, HimaActivity::class.java)
+                val intent = Intent(this, PeopleActivity::class.java)
                startActivity(intent)
         }
         cl_8.setOnClickListener {
-                val intent = Intent(this, HimaDetailsActivity::class.java)
+                val intent = Intent(this, RoomDetailsActivity::class.java)
                 startActivity(intent)
         }
 

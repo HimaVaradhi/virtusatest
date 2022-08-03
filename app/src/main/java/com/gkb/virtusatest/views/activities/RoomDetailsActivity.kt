@@ -6,41 +6,40 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.gkb.virtusatest.R
-import com.gkb.virtusatest.contract.HimaContract
-import com.gkb.virtusatest.model.HimaResponseData
-import com.gkb.virtusatest.presenter.HimaPresenter
-import com.gkb.virtusatest.views.adapter.HimaAdapter
-import kotlinx.android.synthetic.main.activity_hima.*
+import com.gkb.virtusatest.contract.HimaDetailsContract
+import com.gkb.virtusatest.model.HimaDetailsResponse
+import com.gkb.virtusatest.presenter.HImaDetailsPresenter
+import com.gkb.virtusatest.views.adapter.HimaDetailAdapter
+import kotlinx.android.synthetic.main.activity_hima_details.*
 
 
-class HimaActivity: AppCompatActivity(),HimaContract{
 
-    private var adapter: HimaAdapter? = null
+class RoomDetailsActivity: AppCompatActivity(),HimaDetailsContract{
+
+    private var adapter: HimaDetailAdapter? = null
     private lateinit var layoutManager: LinearLayoutManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_hima)
+        setContentView(R.layout.activity_hima_details)
 
 
-        rv_hima_details.setHasFixedSize(true)
+        rv_room_details.setHasFixedSize(true)
         layoutManager = LinearLayoutManager(this)
-        rv_hima_details.layoutManager = layoutManager
-        HimaPresenter(this).getMyData()
+        rv_room_details.layoutManager = layoutManager
+        HImaDetailsPresenter(this).getMyRoomData()
 
     }
 
 
     @SuppressLint("NotifyDataSetChanged")
-    override fun onSuccess(list: List<HimaResponseData>) {
+    override fun onSuccess(list: List<HimaDetailsResponse>) {
 
         if (list.isNotEmpty()){
             val responseBody = list
-            adapter = HimaAdapter(baseContext, responseBody)
+            adapter = HimaDetailAdapter(baseContext, responseBody)
             adapter!!.notifyDataSetChanged()
-            rv_hima_details.adapter = adapter
-            intent.putExtra("kasjbc", list.get(0).id)
-
+            rv_room_details.adapter = adapter
             Toast.makeText(this, "Success", Toast.LENGTH_LONG).show()
 
         }else{
@@ -48,7 +47,7 @@ class HimaActivity: AppCompatActivity(),HimaContract{
 
         }
 
-        }
+    }
 
     override fun onFailure(message: String) {
         Toast.makeText(this, "Data not available", Toast.LENGTH_LONG).show()

@@ -47,8 +47,8 @@
 
 
 
-        <activity android:name="com.gkb.virtusatest.views.activities.HimaActivity" />
-        <activity android:name="com.gkb.virtusatest.views.activities.HimaDetailsActivity" />
+        <activity android:name="com.gkb.virtusatest.views.activities.PeopleActivity" />
+        <activity android:name="com.gkb.virtusatest.views.activities.RoomDetailsActivity" />
 
         <provider
             android:name="androidx.core.content.FileProvider"

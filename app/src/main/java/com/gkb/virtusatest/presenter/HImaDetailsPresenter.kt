@@ -4,12 +4,12 @@ import android.annotation.SuppressLint
 import com.gkb.virtusatest.model.HimaDetailsResponse
 import com.gkb.virtusatest.api.ApiClient
 import com.gkb.virtusatest.util.Constants
-import com.gkb.virtusatest.views.activities.HimaDetailsActivity
+import com.gkb.virtusatest.views.activities.RoomDetailsActivity
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class HImaDetailsPresenter(private val view: HimaDetailsActivity) {
+class HImaDetailsPresenter(private val view: RoomDetailsActivity) {
 
     fun getMyRoomData() {
         ApiClient.getHimaClient2.getRoomDetails()
